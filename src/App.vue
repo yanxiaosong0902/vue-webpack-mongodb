@@ -16,16 +16,28 @@
 </script>
 <style lang="scss">
 	@import './assets/css/app.sass';
+	
+	// .container{
+	// 	position:relative;
+	// 	top:55px;
+	// 	height: calc(100vh - 110px);
+	// 	overflow:hidden;
+	// 	overflow-y:scroll;
+	// 	background:#f1f1f1;
+	// 	-webkit-overflow-scrolling:touch;
+	// }
 	.container{
-		position: $version-fixed;
+		position:absolute;
+		width:100%;
+		//height:100%;
 		top:55px;
 		bottom:55px;
-        width: 100%;
-        height: calc(100vh - #{$top-total-height} - 55px);
-        overflow-y: auto;
-        overflow-x: hidden;
-        background: white;
-        transform: translate3d(0, 0, 0);
-        -webkit-overflow-scrolling: touch;
+		overflow:hidden;
+		overflow-y:scroll;
+		-webkit-overflow-scrolling:touch;
+	}
+	.main{
+		height:100%;
+		width:100%;
 	}
 </style>
