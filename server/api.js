@@ -33,5 +33,13 @@ router.get('/api/login/getAccount',(req,res) => {
         }
     });
 });
-
+router.delete('./api/login/deleteAccount',(req,res)=>{
+    models.Login.find(err,data=>{
+        if(err){
+            res.send(err)
+        }else{
+            res.send(data)
+        }
+    })
+})
 module.exports = router;
